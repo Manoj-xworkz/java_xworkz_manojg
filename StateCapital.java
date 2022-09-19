@@ -132,8 +132,14 @@ static String getCapitalByState(String State)
 	if(State=="Uttarkhand")
 	{
 		System.out.println("Uttarkhand capital is Lucknow");
+		return "Gairsain";
+	}
+	if(State=="Uttar Pradesh")
+	{
+		System.out.println("Tirpura capital is Agartala");
 		return "Lucknow";
-	}if(State=="West Bengal")
+	}
+	if(State=="West Bengal")
 	{
 		System.out.println("West Bengal capital is Kolkata");
 		return "Kolkata";
