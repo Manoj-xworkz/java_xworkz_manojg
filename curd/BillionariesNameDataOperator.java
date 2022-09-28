@@ -101,7 +101,7 @@ class BillionariesNameDataOperator
 		return null;
 	}
 	
-	static void delete(String name)
+	static boolean delete(String name)
 	{
 		if(name!=null)
 		{
@@ -113,6 +113,7 @@ class BillionariesNameDataOperator
 					String ref=billionariesName[index];
 					System.out.println("Billionarie Found: "+ref+" Deleting into null at index: "+index);
 					billionariesName[index]=null;
+					return true;
 				}
 			
 			}
@@ -122,15 +123,16 @@ class BillionariesNameDataOperator
 			
 			
 		}
+		return false;
 	}
-	static void delete(int index)
+	static boolean delete(int index)
 	{
 		if(billionariesName[index]!=null)
 		{
 			System.out.println("Entered delete using index");
 			billionariesName[index]=null;
 			System.out.println("Deleting into null at index: "+index);
-			
+			return true;
 		}
 		
 		else
@@ -139,6 +141,7 @@ class BillionariesNameDataOperator
 			
 			
 		}
+		return false;
 	}
 	
 	

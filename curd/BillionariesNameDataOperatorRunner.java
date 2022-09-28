@@ -10,19 +10,23 @@ public static void main(String[] names){
 	BillionariesNameDataOperator.save("Larry Ellison");
 	BillionariesNameDataOperator.save("Larry Page"); 
 	BillionariesNameDataOperator.save("Mukesh Ambani");
-BillionariesNameDataOperator.save("Sergey Brin");	
+	BillionariesNameDataOperator.save("Sergey Brin");	
 	BillionariesNameDataOperator.displayDetails();
 	boolean ref=BillionariesNameDataOperator.findBillionaries("Mukesh Ambani");
 	System.out.println("Billionarie found: "+ref);
 	
 	BillionariesNameDataOperator.update("Sergey Brin","Steve Ballmer");
 	BillionariesNameDataOperator.displayDetails();
+	
 	BillionariesNameDataOperator.update(5,"Michael Bloomberg");
 	BillionariesNameDataOperator.displayDetails();
 	
-	BillionariesNameDataOperator.delete("Gautam Adani");
+	boolean del1=BillionariesNameDataOperator.delete("Gautam Adani");
+	System.out.println("Deleted: "+del1);
 	BillionariesNameDataOperator.displayDetails();
-	BillionariesNameDataOperator.delete(6);
+	
+	boolean del2=BillionariesNameDataOperator.delete(6);
+	System.out.println("Deleted: "+del2);
 	BillionariesNameDataOperator.displayDetails();
 	
 	System.out.println("main end");
