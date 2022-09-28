@@ -9,7 +9,7 @@ public static void main(String[] names){
 	ColorsNameDataOperator.save("Blue");
 	ColorsNameDataOperator.save("Grey");
 	ColorsNameDataOperator.save("White"); //extara color err msg
-	ColorsNameDataOperator.save("Red"); //length<=3 err msg
+	ColorsNameDataOperator.save("Red"); //length <=3 err msg
 	ColorsNameDataOperator.displayDetails();
 	boolean ref=ColorsNameDataOperator.findColor("Green");
 	System.out.println("Color found: "+ref);
