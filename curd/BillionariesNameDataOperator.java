@@ -40,7 +40,7 @@ class BillionariesNameDataOperator
 		System.out.println("Displaying details");
 		for(int index=0;index<billionariesName.length;index++)
 		{
-			System.out.println("Billionaries Name is : "+billionariesName[index]);
+			System.out.println("Billionaries Name is : ["+index+"] "+billionariesName[index]);
 		}
 		System.out.println("**********************************************");
 	}
